@@ -21,12 +21,12 @@ a = ssim(tmp, K)
 subplot(1,3,2), imshow(tmp);
 imgHex = dec2hex(J);
 
-fid = fopen('C:\intelFPGA_lite\16.1\ImageProcessing\oImageTest.txt', 'wt');
+fid = fopen('.\ImageProcessing\oImageTest.txt', 'wt');
 fprintf(fid, '%x\n', J);
 fclose(fid);
 
 int8 fileID;
-fileID = fopen('C:\intelFPGA_lite\16.1\ImageProcessing\result.txt','r');
+fileID = fopen('.\ImageProcessing\result.txt','r');
 
 %fid = fopen('file.txt');
 %comma  = char(',');
